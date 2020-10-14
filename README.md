@@ -14,16 +14,15 @@
 
 The following code snippet provides an interface function to query each of the calculators.
 
-Required python packages:
+*Required python packages:*
 
--- requests (to handle the online API requests)
--- json (to translate between Python dictionaries and json format)
+- requests (to handle the online API requests)
+- json (to translate between Python dictionaries and json format)
 
 
-	import requests
-	import json
-	def DVcalculator(alpha, delta, system='supergalactic', parameter='distance', value=20, calculator='NAM'):
-	    
+		import requests
+		import json
+		def DVcalculator(alpha, delta, system='supergalactic', parameter='distance', value=20, calculator='NAM'):
 	    """
 	    Inputs: 
 	        alpha: (float)
@@ -47,12 +46,10 @@ Required python packages:
 	            Options are:
 	                "NAM" to query the calcualtor at http://edd.ifa.hawaii.edu/NAMcalculator
 	                "CF3" to query the calcualtor at http://edd.ifa.hawaii.edu/CF3calculator
-	        
 	    Output:
 	        A python dictionary which contains the distance and velocity of the 
 	        given object and the coordinate of the object in different systems
-	    """
-	    
+	    """   
 	    coordinate = [float(alpha), float(delta)]
 	    query  = {
 	              'coordinate': coordinate,
@@ -61,9 +58,7 @@ Required python packages:
 	              'value': float(value)
 	             }
 	    headers = {'Content-type': 'application/json'}
-	    
 	    API_url = 'http://edd.ifa.hawaii.edu/'+calculator+'calculator/api.php'
-	    
 	    try:
 	        r = requests.get(API_url, data=json.dumps(query), headers=headers)
 	        output = json.loads(r.text) # a python dictionary
@@ -72,6 +67,7 @@ Required python packages:
 	        print("Please check your intput parameters ...")
 	        output = None
 	    return output
+
 
 ### How to acknowledge this work
 
