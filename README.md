@@ -19,7 +19,7 @@ The following code snippet provides an interface function to query each of the c
 - requests (to handle the online API requests)
 - json (to translate between Python dictionaries and json format)
 
-
+```python
 		import requests
 		import json
 		def DVcalculator(alpha, delta, system='supergalactic', parameter='distance', value=20, calculator='NAM'):
@@ -67,7 +67,7 @@ The following code snippet provides an interface function to query each of the c
 	        print("Please check your intput parameters ...")
 	        output = None
 	    return output
-
+```
 
 ### How to acknowledge this work
 
