@@ -1,4 +1,4 @@
-# Cosmicflows Distance-Velocity API
+# The Cosmicflows Distance-Velocity API
 
 [This notebook](https://github.com/ekourkchi/Cosmicflows_API/blob/main/Cosmicflows_API.ipynb) explains how you can simply interact with Cosmicflows calculators within your *Python* code.
 
