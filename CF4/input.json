@@ -1,0 +1,32 @@
+
+{
+   "galaxies":[
+      {
+         "coordinate":[
+            6.19,
+            -20.73
+         ],
+         "system":"equatorial",
+         "parameter":"distance",
+         "value":10
+      },
+      {
+         "coordinate":[
+            102,
+            -2
+         ],
+         "system":"supergalactic",
+         "parameter":"velocity",
+         "value":1000
+      },    
+      {
+         "coordinate":[
+            50,
+            120
+         ],
+         "system":"supergalactic",
+         "parameter":"velocity",
+         "value":1000
+      }   
+   ]
+}
